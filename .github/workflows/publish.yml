@@ -26,7 +26,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render Quarto Report
-        run: quarto render unicef_report.qmd --to html
+        run: quarto render unicef_report.ipynb --to html --execute
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
